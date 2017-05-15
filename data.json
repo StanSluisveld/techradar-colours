@@ -1,0 +1,37 @@
+[
+  {
+    "name": "tool",
+    "ring": "Adopt",  
+    "quadrant": "Tools",
+    "isNew": true,
+    "description": "Good tool to get nails into walls."
+  },
+   {
+    "name": "Nail",
+    "ring": "Trail",
+    "quadrant": "Technology",
+    "isNew": "TRUE",
+    "description": "Good technology to mount something on walls."
+  },
+  {
+    "name": "Glueing",
+    "ring": "Asses",
+    "quadrant": "Method",
+    "isNew": "False",
+    "description": "I don't have good experiences with glueing things together."
+  },  
+  {
+    "name": "NPM",
+    "ring": "hold",
+    "quadrant": "Platform",
+    "isNew": false,
+    "description": "Well-known node package repository."
+  },
+   {
+    "name": "Heehoi",
+    "ring": "hold",
+    "quadrant": "Platform",
+    "isNew": false,
+    "description": "Well-known node package repository."
+  }
+]

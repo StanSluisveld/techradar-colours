@@ -24,9 +24,14 @@ let plugins = [
     new copyWebpackPlugin([{
         from: './src/assets',
         to: 'assets'
-    }])
-
-   
+    }]),
+     new webpack.optimize.UglifyJsPlugin({
+                comments: false,
+                mangle: false,
+                compress: {
+                   warnings: true 
+                }
+            }) 
 ];
 
 module.exports = {

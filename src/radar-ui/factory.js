@@ -56,8 +56,9 @@ function createRadar (blips) {
         _.each(quadrants, function (quadrant) {
             radar.addQuadrant(quadrant)
         });
-
-        const size = (window.innerHeight - 133) < 620 ? 620 : window.innerHeight - 133;
+        // Adjust ring size;
+       //const size = (window.innerHeight - 133) < 400 ? 400 : window.innerHeight - 133;
+        const size = 480;
 
         new GraphingRadar(size, radar).init().plot();
 

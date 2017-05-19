@@ -6,6 +6,7 @@ const _ = require('lodash/core');
 const RingCalculator = require('./ringCalculator');
 
 const Radar = function (size, radar) {
+  console.log(size);
   var svg, radarElement, blipWidth = 20;
 
   var tip = d3tip().attr('class', 'd3-tip').html(function (text) {
@@ -267,7 +268,7 @@ const Radar = function (size, radar) {
   }
 
   function createHomeLink(pageElement) {
-    if (pageElement.select('.home-link').empty()) {
+    if (pageElement.select('header')) {
       pageElement.append('div')
         .html('&#171; Ga terug naar het volledige overzicht')
         .classed('home-link', true)

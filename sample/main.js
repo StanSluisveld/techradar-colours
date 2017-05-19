@@ -11,7 +11,7 @@ const createRadar = require('../index');
 //replace with require('techradar') when using the npm package 'techradar' in your project
 
 
-fetch('./data.json')  
+fetch('./assets/data.json')  
   .then(  
     function(response) {  
       if (response.status !== 200) {  

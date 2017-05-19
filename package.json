@@ -5,23 +5,20 @@
   "main": "index.js",
   "license": "AGPL-3.0",
   "scripts": {
-    "test": "npm run flow && npm run jasmine",
     "build": "rm -rf ./dist && webpack",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --dev --inline",
-    "jasmine": "istanbul cover jasmine",
-    "flow": "flow",
-    "debug": "node-debug webpack",
-    "shrinkpack": "rm -rf ./node_modules && rm -f npm-shrinkwrap.json && npm i && npm shrinkwrap --dev && shrinkpack"
+    "debug": "node-debug webpack"
   },
-  "author": "Thomas Franz",
+  "author": "Stan",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thomasfranz/techradar"
+    "url": ""
   },
   "keywords": [
-    "tech-radar"
+    "tech-radar-colours"
   ],
   "devDependencies": {
+    "copy-webpack-plugin": "4.0.1",
     "cross-env": "4.0.0",
     "css-loader": "0.26.1",
     "extract-text-webpack-plugin": "2.1.0",

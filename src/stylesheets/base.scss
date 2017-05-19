@@ -87,7 +87,7 @@ body {
       color: $green;
     }
     &.second .quadrant-table__name {
-      color: $brown;
+      color: $red;
     }
     &.third .quadrant-table__name {
       color: $orange;
@@ -259,7 +259,7 @@ body {
           stroke: none;
         }
         &.second {
-          fill: $brown;
+          fill: $red;
           stroke: none;
         }
         &.third {

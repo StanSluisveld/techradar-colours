@@ -7,6 +7,7 @@ var PACKAGE = require('./package.json');
 var version = PACKAGE.version;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const copyWebpackPlugin = require('copy-webpack-plugin');
 
 let entry = './sample/main.js';
 
@@ -19,7 +20,13 @@ let plugins = [
         template: './sample/template.html',        
         title: "Sample Radar",
         version: version
-    })
+    }),
+    new copyWebpackPlugin([{
+        from: './src/assets',
+        to: 'assets'
+    }])
+
+   
 ];
 
 module.exports = {

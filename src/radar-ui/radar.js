@@ -268,7 +268,7 @@ const Radar = function (size, radar) {
   }
 
   function createHomeLink(pageElement) {
-    if (pageElement.select('header')) {
+    if (pageElement.select('.home-link').empty()) {
       pageElement.append('div')
         .html('&#171; Ga terug naar het volledige overzicht')
         .classed('home-link', true)
@@ -288,7 +288,7 @@ const Radar = function (size, radar) {
   function drawLegend(order) {
     removeRadarLegend();
 
-    var triangleKey = "New or moved";
+    var triangleKey = "New";
     var circleKey = "No change";
 
     var container = d3.select('svg').append('g')

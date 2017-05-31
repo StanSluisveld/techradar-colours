@@ -1,13 +1,12 @@
 {
   "name": "techradar",
   "version": "0.1.2",
-  "description": "Visualize data interactively on a web page as a radar.",
+  "description": "Colours Tech Radar.",
   "main": "index.js",
   "license": "AGPL-3.0",
   "scripts": {
     "build": "rm -rf ./dist && webpack",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --dev --inline",
-    "debug": "node-debug webpack"
   },
   "author": "Stan",
   "repository": {

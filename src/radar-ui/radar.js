@@ -6,7 +6,7 @@ const _ = require('lodash/core');
 const RingCalculator = require('./ringCalculator');
 
 const Radar = function (size, radar) {
-  console.log(size);
+  //console.log(size);
   var svg, radarElement, blipWidth = 20;
 
   var tip = d3tip().attr('class', 'd3-tip').html(function (text) {
@@ -73,8 +73,9 @@ const Radar = function (size, radar) {
         .outerRadius(ringCalculator.getRadius(i + 1))
         .startAngle(toRadian(quadrant.startAngle))
         .endAngle(toRadian(quadrant.startAngle - 90));
-
-      quadrantGroup.append('path')
+      
+      quadrantGroup
+        .append('path')
         .attr('d', arc)
         .attr('class', 'ring-arc-' + ring.order())
         .attr('transform', 'translate(' + center() + ', ' + center() + ')');
@@ -120,6 +121,8 @@ const Radar = function (size, radar) {
       .attr('transform', 'scale(' + (blipWidth / 34) + ') translate(' + (-404 + x * (34 / blipWidth) - 17) + ', ' + (-282 + y * (34 / blipWidth) - 17) + ')')
       .attr('class', order);
   }
+
+  
 
   function circleLegend(x, y, group) {
     return (group || svg).append('path')
@@ -377,7 +380,7 @@ const Radar = function (size, radar) {
         .append('div')
         .attr('class', 'quadrant-table ' + quadrant.order);
 
-
+        // Add react router here?
       header.append('div')
         .attr('class', 'button ' + quadrant.order + ' full-view')
         .text(quadrant.quadrant.name())
@@ -397,15 +400,15 @@ const Radar = function (size, radar) {
   //     .on('click', window.print.bind(window));
   }
 
-  function plotRadarFooter() {
-    d3.select('body')
-      .insert('div', '#radar-plot + *')
-      .attr('id', 'footer')
-      .append('div')
-      .attr('class', 'footer-content')
-      .append('p')
-      .html('');
-  }
+  // function plotRadarFooter() {
+  //   d3.select('body')
+  //     .insert('div', '#radar-plot + *')
+  //     .attr('id', 'footer')
+  //     .append('div')
+  //     .attr('class', 'footer-content')
+  //     .append('p')
+  //     .html('');
+  // }
 
   function mouseoverQuadrant(order) {
     d3.select('.quadrant-group-' + order).style('opacity', 1);
@@ -498,7 +501,7 @@ const Radar = function (size, radar) {
       plotBlips(quadrantGroup, rings, quadrant);           
     });
 
-    plotRadarFooter();
+    // plotRadarFooter();
   };
 
   return self;

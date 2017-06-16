@@ -29,7 +29,7 @@ let plugins = [
                 comments: false,
                 mangle: false,
                 compress: {
-                   warnings: true 
+                   warnings: false 
                 }
             }) 
 ];

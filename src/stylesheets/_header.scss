@@ -44,7 +44,6 @@ header {
     cursor: pointer;
     display: inline-block;
     font-size: $baseFont;
-    text-align: left;
     width: 80%;
   }
 
@@ -53,7 +52,7 @@ header {
     text-transform: capitalize;
     display: inline-block;
     margin-right: 20px;
-    border-radius: 2px;
+    border-radius: 5px;
     line-height: 1em;
     padding: 10px 20px;
     cursor: pointer;
@@ -74,18 +73,22 @@ header {
       &.first {
         color: white;
         background-color: $green;
+        border-bottom: 3px solid $dark-green;
       }
       &.second {
         color: white;
-        background-color: $red;
+        background-color: $light-blue;
+        border-bottom: 3px solid $dark-blue;
       }
       &.third {
         color: white;
         background-color: $orange;
+        border-bottom: 3px solid $dark-orange;
       }
       &.fourth {
         color: white;
         background-color: $violet;
+        border-bottom: 3px solid $dark-violet;
       }
     }
 
@@ -93,18 +96,22 @@ header {
       &.first {
         background-color: $green;
         color: $white;
+        border-bottom: 3px solid $dark-green;
       }
       &.second {
-        background-color: $red;
+        background-color: $light-blue;
         color: $white;
+         border-bottom: 3px solid $dark-blue;
       }
       &.third {
         background-color: $orange;
         color: $white;
+         border-bottom: 3px solid $dark-orange;
       }
       &.fourth {
         background-color: $violet;
         color: $white;
+         border-bottom: 3px solid $dark-violet;
       }
     }
   }

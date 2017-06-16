@@ -1,5 +1,6 @@
 
 require('../images/radar_legend.png');
+require('../images/colourssmall.jpg');
 require('../src/stylesheets/base.scss');
 
 

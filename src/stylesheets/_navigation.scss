@@ -70,7 +70,6 @@ navigation {
     cursor: pointer;
     display: inline-block;
     font-size: $baseFont;
-    text-align: left;
     width: 80%;
   }
 
@@ -79,10 +78,10 @@ navigation {
     text-transform: capitalize;
     display: inline-block;
     margin-right: 20px;
-    border-radius: 2px;
+    border-radius: 5px;
     line-height: 1em;
     padding: 10px 20px;
-    cursor: pointer;
+    cursor: pointer;  
     transition: all .2s ease-out;
 
     background-color: $grey-light;

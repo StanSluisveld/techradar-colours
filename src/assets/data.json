@@ -4,84 +4,84 @@
   {
     "name": "Continuous Integration",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": "Hier is de jfkda;jfdklaj;fdjaf "
   },
   {
     "name": "Progressive enhancement",
     "ring": "adopt",  
-    "quadrant": "Techniques",
-    "isNew": false,
-    "description": ""
+    "quadrant": "Methods",
+    "isNew": true,
+    "description": "Hallo Koen"
   },
   {
     "name": "Responsive",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Mobile first",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Style Sheet Driven design",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Scrum / Agile",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Atomic Design",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Continuous Delivery",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Scaffolding",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Responsive Images",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Test Driven Development", 
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
   {
     "name": "Inversion of Control / Dependency Injection",
     "ring": "adopt",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
@@ -89,15 +89,15 @@
   {
     "name": "x",
     "ring": "trial",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
 
    {
     "name": "y",
-    "ring": "asses",  
-    "quadrant": "Techniques",
+    "ring": "assess",  
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
@@ -105,7 +105,7 @@
    {
     "name": "z",
     "ring": "hold",  
-    "quadrant": "Techniques",
+    "quadrant": "Methods",
     "isNew": false,
     "description": ""
   },
@@ -189,8 +189,16 @@
   },
 
    {
-    "name": "Yarn",
+    "name": "Webpack",
     "ring": "trial",  
+    "quadrant": "Tools",
+    "isNew": true,
+    "description": ""
+  },
+
+   {
+    "name": "Yarn",
+    "ring": "assess",  
     "quadrant": "Tools",
     "isNew": false,
     "description": ""
@@ -291,7 +299,7 @@
 
   {
     "name": "Postcss",
-    "ring": "asses",  
+    "ring": "assess",  
     "quadrant": "Languages and frameworks",
     "isNew": false,
     "description": ""

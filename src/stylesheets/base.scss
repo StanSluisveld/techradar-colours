@@ -7,6 +7,7 @@
 @import 'table';
 @import 'navigation';
 
+
 html{
   height: 100%;
 }
@@ -46,14 +47,13 @@ h1{
 
 
 
-@media screen  {
+@media screen {
 
   .print-page-header {
     display:none;
   }
 
   #radar {
-    
     padding-left:10%;
     padding-right:10%;
     margin: 0 auto;
@@ -251,45 +251,4 @@ h1{
   }
 }
 
-// Responsive
-
-// @media only screen and (min-width: 400px) {
-
-    
-
-//    #radar {
-//       display: none !important;
-//     }
-
-//     #radar div.quadrant-table.first.selected{
-//       float: left;    
-//     }
-
-//      #radar div.quadrant-table.fourth.selected{
-//       float: left;      
-//     }
-
-//     #radar div.quadrant-table.selected{
-//       max-width: 100%;
-//       width: 100%;
-//     }
-
-//     #radar div.quadrant-table ul li {
-//     display: block;
-//     font-size: 14px;
-//     border-top: 1px solid #ebebeb;
-//     padding: 0;
-//     }
-
-//     #radar div.quadrant-table ul li .blip-list-item {
-//     display: block;
-//     padding: 1em .4em 1em 20px;
-//     line-height: 1.15em;
-//     text-decoration: none;
-//     color: #000;
-//     cursor: pointer;
-//     font-weight: 600;
-//     font-size: 14px;
-//   }
-// }
-
+@import 'responsive';
